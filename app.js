@@ -56,3 +56,7 @@ sequelize
   .catch((err) => {
     console.error("Error de conexión con la base de datos:", err);
   });
+
+  app.get("/", (req, res)=>{
+    res.send("Bienvenido a la API de productos");
+  })
